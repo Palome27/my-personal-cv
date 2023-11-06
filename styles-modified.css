@@ -22,11 +22,17 @@ body {
     /* Border around the CV */
 }
 
+.training {
+    background-color: aquamarine;
+    z-index: index 3;
+}
+
 header {
     text-align: center;
     margin-bottom: 20px;
     /* Space below the header */
 }
+
 
 header h1 {
     color: #333;
@@ -61,7 +67,7 @@ h2 {
     /* Remove the default bullet points */
 }
 
-#skills li {
+#skills > li {
     background-color: #f9f9f9;
     /* Lighter gray background */
     padding: 5px;
