@@ -18,7 +18,7 @@
     <title>CV ANDREA PALOME</title>
 
     <style>
-       body {
+        body {
             font-family: 'Courier', monospace;
             margin: 40px;
             background-color: #f1f1f1;
@@ -28,12 +28,13 @@
         #cv {
             max-width: 90%; /*CACACAA2*/
     margin: 30px auto;
+    display: grid;
+    gap: 30px;
     background-color: #b7dad0;
     border-radius: 9px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
         }
-
 
         /* Student's name and title */
         header {
@@ -45,6 +46,7 @@
             margin-bottom: 30px;
             border-radius: 10px;
             font-family: 'Courier', monospace;
+            grid-column: span 2;
             font-size: 1.8em;
         }
 
@@ -62,7 +64,6 @@
             transition: transform 0.3s;
             font-family: 'Courier', monospace;
             color: #000;
-            margin-bottom: 20px;
         }
 
         /* Hover effect */
@@ -118,6 +119,7 @@
         /* Social Media Icons */
         #social {
             text-align: center;
+            grid-column: span 2;
         }
 
         #social a {
