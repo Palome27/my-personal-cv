@@ -1,16 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <!-- Metadata for the browser -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Link to the CSS stylesheet -->
     <link rel="stylesheet" href="styles-modified.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Courier&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <!-- Title of the page -->
-    <title>Student CV</title>
+    <title>CV ANDREA PALOME</title>
+
+    <style>
+        body {
+            font-family: 'Courier', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        /* Main container for the CV */
+        #cv {
+            max-width: 1500px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            gap: 30px;
+            background-color: #b7dad0;
+            border-radius: 9px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Student's name and title */
+        header {
+            position: sticky;
+            background-color: #3b8f93; 
+            color: #000;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 9px 9px 0 0;
+            font-family: 'Courier', monospace;
+            grid-column: span 2;
+            font-size: 1.8em;
+        }
+
+        /* Banner image */
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Contact information, Education, Skills, Projects, Experience */
+        section {
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            font-family: 'Courier', monospace;
+            color: #000;
+        }
+
+        /* Hover effect */
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        /* Skills, Projects, Experience background color */
+        #skills,
+        #projects,
+        #experience,
+        #certifications,
+        #volunteer,
+        #social,
+        #languages {
+            background-color: #7DBDBF;
+            color: #000; 
+        }
+
+        /* Education background color */
+        #education,
+        #contact {
+            background-color: #88CED1;
+            color: #000; 
+        }
+
+        /* List styles */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Article styles */
+        article {
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+        }
+
+        /* Circular profile image */
+        #profile-img {
+            float: right;
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            margin-left: 40px;
+        }
+
+        /* Social Media Icons */
+        #social {
+            text-align: center;
+            grid-column: span 2;
+        }
+
+        #social a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #000; 
+        }
+    </style>
 </head>
 
 <body>
@@ -18,46 +138,193 @@
     <div id="cv">
 
         <!-- Student's name and title -->
-        <header style="position: sticky">
-            <h1>Jane Doe</h1>
-            <p>Computer Science Student</p>
+        <header>
+            <div id="profile-img">
+                <img src="andrea-palome-gonzalez.jpg" alt="Andrea Palomé Gonzalez">
+            </div>
+            <h1 style="font-size: 2em; margin: 0;">Andrea Palomé González</h1>
+            <p style="font-size: 1.2em; margin: 0; color: black;">Licenciada en Administración Financiera</p>
         </header>
 
         <!-- Contact information -->
-        <section id="contact">
-            <h2>Contact Information</h2>
+        <section id="contact" class="training" style="text-align: center;">
+            <h2>DATOS DE CONTACTO</h2>
             <address>
-                <p>Email: janedoe@example.com</p>
-                <p>Phone: +1234535645774575490</p>
+                <p>Correo: andrea.palome@live.com</p>
+                <p>Teléfono: +524425015095</p>
+                <p>Dirección: Querétaro, México</p>
+                <p>Correo alternativo: torcu2000@live.com.mx</p>
+                <p>GitHub: Palome27</p>
             </address>
         </section>
 
         <!-- Education details -->
-        <section id="education" class= "training" >
-            <h2>Education</h2>
-            <p>BS in Computer Science, XYZ University, 2023</p>
+        <section id="education" class="training" style="text-align: center;">
+            <h2>EDUCACIÓN</h2>
+            <p><u> Master: </u></p> Universidad Francisco de Vitoria, Madrid, 2023.</p>
+            <p><u> Universidad:</u></p> Tecnológico de Monterrey campus Querétaro, México, 2023</p>
+            <p><u> Preparatoría: </u></p>Colegio Fray Luis de León, Querétaro, 2018 </p>
         </section>
 
         <!-- Skills -->
         <section id="skills" class="training">
-            <h2 style="background-color: coral; ">Skills</h2>
-            <ul style="background-color: purple;">
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
+            <h2>HABILIDADES</h2>
+            <ul>
+                <li>*HTML & CSS</li>
+                <li>*JavaScript</li>
+                <li>*Python</li>
+                <li>*Resolución de Problemas</li>
+                <li>*Excelentes habilidades en comunicación y creación.</li>
+                <li>*Desempeño óptimo tanto en equipo como de manera independiente.</li>
+                <li>*Capacidad para trabajar en varias tareas simultáneamente y bajo presión.</li>
+                <li>*Habilidad para seguir instrucciones y ofrecer resultados de calidad.</li>
+                <li>*Manejo del paquete de Office.</li>
+                <li>*Manejo de R (software de programación).</li>
+                <li>*Manejo de plataformas en línea para el trabajo en equipo.</li>
+                <li>*Manejo de POWER BI</li>
+                <li>*Manejo de GITHUB</li>
+                <li>*Gestión de plataformas: Bloomberg, Economática, S&Q Capital.</li>
+                <li>*Licencias actuales en diferentes cursos en la plataforma CFI.</li>
+                <li>*Colaboración en Equipo.</li>
+                <article>
+                <h3>CONJUNTO DE HABILIDADES</h3>
+                <p>Poseo habilidades avanzadas en HTML, CSS, JavaScript y Python, permitiéndome desarrollar sitios web interactivos y soluciones eficientes. Mi destreza en la resolución de problemas se refleja en la entrega consistente de resultados de alta calidad. Además, mis sólidas habilidades de comunicación y creatividad respaldan la creación de proyectos innovadores tanto de manera independiente como en equipo.
+                    Demostrando capacidad para manejar múltiples tareas bajo presión, me destaco en entornos colaborativos y puedo seguir instrucciones para lograr resultados de calidad. Mis competencias abarcan el paquete de Office, R, GitHub y POWER BI, junto con experiencia en plataformas financieras como Bloomberg, Economática y S&Q Capital. Mis licencias actuales en cursos de la plataforma CFI reflejan un compromiso constante con el aprendizaje.
+                    En resumen, soy un profesional versátil con habilidades técnicas, analíticas y de comunicación que me posicionan para abordar desafíos complejos en diversos contextos laborales.</p>
             </ul>
         </section>
 
-        <!-- Experience -->
-        <section id="experience">
-            <h2>Experience</h2>
-            <!-- Each work experience can be an article -->
+        <!-- Projects -->
+        <section id="projects" class="training">
+            <h2>EXPERIENCIA LABORAL</h2>
             <article>
-                <h3>Intern at ABC Corp</h3>
-                <p>Developed XYZ features.</p>
+                <h3>Bosal México (empresa automotriz)</h3>
+                <p><u>AGOSTO DE 2016 - ACTUALIDAD (PRÁCTICAS PROFESIONALES EN EL DEPARTAMENTO DE FINANZAS Y ADMINISTRACIÓN)</u></p>
+                    <ul>
+                        <li>*Practicante en las áreas de ventas, calidad, costos, recursos humanos, planificación de proyectos, finanzas y contabilidad.</li>
+                        <li>*Diversas tareas relacionadas con las áreas de trabajo mencionadas anteriormente.</li>
+                        <li>*Capacitación de personal.</li>
+                        <li>*Generación de informes financieros, cálculos para proyecciones, presupuestos, etc.</li>
+                        <li>*Generación de protocolos en procesos administrativos.</li>
+                    </ul>
+                <p><u>AGOSTO DE 2016 - ACTUALIDAD (PRÁCTICAS PROFESIONALES EN EL DEPARTAMENTO DE FINANZAS Y ADMINISTRACIÓN)</u></p>
+                    <ul>
+                        <li>Ejecuto actividades como informes semanales, informes de materias primas, desperdicios, inventarios, proyecciones de ventas, conciliaciones mensuales, etc.</li>
+                    </ul>
+                </p>                
+            </article>
+            <article>
+                <h3>Zore Sports (Compañia de artículos deportivos)</h3>
+                <p><u>ENERO DE 2020 - 2022 (PRÁCTICAS PROFESIONALES EN EL DEPARTAMENTO DE FINANZAS Y ADMINISTRACIÓN) </u></p>
+                <ul>
+                    <li>*Gestión de redes sociales, Community manager.</li>
+                    <li>*Gestión de envíos.</li>
+                    <li>*Cálculos financieros: presupuestos, proyecciones, ventas, ingresos/gastos mensuales, aspectos de monedas electrónicas.</li>
+                    <li>*Gestión de plataformas de comercio electrónico.</li>
+                    <li>*Informes financieros.</li>
+                    <li>*Facturación.</li>
+                    <li>*Servicio al cliente (quejas, devoluciones, pedidos, etc.).
+                    </li>
+                </ul>
+            </p>                
+        </article>
+        <article>
+            <h3>Delcen (empresa de consultoría en la industria alimentaria)</h3>
+            <p><u>FEBRERO DE 2022 - ACTUALIDAD (PRÁCTICAS PROFESIONALES EN EL DEPARTAMENTO DE FINANZAS Y ADMINISTRACIÓN) </u></p>
+            <ul>
+                <li>*Cálculos financieros: presupuestos, proyecciones, ventas, ingresos/gastos mensuales, aspectos de monedas electrónicas</li>
+                <li>*Gestión de plataformas de comercio electrónico</li>
+                <li>*Informes financieros</li>
+                <li>*Facturación</li>
+                <li>*Generación de informes administrativos</li>
+                <li>*Conciliación y gestión de cuentas mensuales</li>
+                </li>
+            </ul>
             </article>
         </section>
-    </div>
-</body>
 
-</html>
+        <!-- Experience -->
+        <section id="experience"class="training" style="text-align: center;">
+
+            <h2>UN POCO SOBRE MI</h2>
+            <!-- Each work experience can be an article -->
+            <article>
+                <p>
+                    Mi especialización en números se combina con una apasionada dedicación a la gestión financiera y administrativa. Con habilidades destacadas en análisis financiero, presupuestos y proyecciones, ofrezco una sólida capacidad para abordar desafíos financieros con éxito.
+                    Soy una persona meticulosa y organizada, con experiencia en la creación de informes financieros precisos, gestión de cuentas mensuales, conciliaciones y protocolos administrativos. Mi enfoque proactivo y resultados orientados se traducen en la ejecución eficiente de tareas bajo presión.
+                    Además de mi destreza financiera, aporto una visión estratégica para mejorar procesos administrativos y fomentar el crecimiento eficiente de la empresa. Mi versatilidad se refleja en mi capacidad para colaborar efectivamente en entornos multidisciplinarios, respaldada por mi participación en actividades deportivas y culturales en mi tiempo libre.
+                    Con una mentalidad orientada a metas y un enfoque innovador, estoy comprometido a contribuir significativamente al éxito financiero y operativo de cualquier organización que busque aprovechar mi experiencia y dedicación.</p>
+            </article>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications" class="training" style="text-align: center;">
+            <h2>CERTIFICACIONES</h2>
+            <ul>
+                <p><u>Curso de Ética Bursátil y Sanas Prácticas del Mercado de Valores</u></p>
+                <li>ID de la credencial E-79371-Pi5gCE202303200814</li>
+            </ul>
+            
+            <ul>
+                <p><u>Environmental Social Governance</u></p>
+                <li>ID de la credencial nWiXU57twsKwHxQUEZfoDtYp</li>
+            </ul>
+            
+            <ul>
+                <p><u>Introduction to Banking</u></p>
+                <li>ID de la credencial 52245674</li>
+            </ul>
+            
+            <ul>
+                <p><u>Accounting Fundamentals</u></p>
+                <li>ID de la credencial 52168786</li>
+            </ul>
+            
+            <ul>
+                <p><u>Corporate Finance Fundamentals</u></p>
+                <li>ID de la credencial 52174181</li>
+            </ul>
+            
+            <ul>
+                <p><u>Fundamentals of Credit</u></p>
+                <li>ID de la credencial 52170411</li>
+            </ul>
+            
+            <ul>
+                <p><u>Introduction to ESG</u></p>
+                <li>ID de la credencial 52175761</li>
+            </ul>
+            
+            <ul>
+                <p><u>Reading Financial Statements</u></p>
+                <li>ID de la credencial 52175071</li>
+            </ul>
+            
+        </section>
+
+        <!-- Volunteer Experience -->
+        <section id="volunteer" class="training" style="text-align: center;">
+            <h2>EXPERIENCIA EN EL EXTRANJERO</h2>
+            <article>
+                <h3>Maestría</h3>
+                <p>Máster de Business Analytics & Big Data</p>
+            </article>
+        </section>
+
+        <!-- Languages -->
+        <section id="languages" class="training" style="text-align: center;">
+            <h2>IDIOMAS</h2>
+            <ul>
+                <li>Ingles B2+</li>
+                <li>Español, lengua nativa</li>
+                <li>Portugués, nivel básico</li>
+            </ul>
+        </section>
+
+<!-- Social Media Banner -->
+<section id="social">
+    <h2>CONECTA CONMIGO EN LINKEDIN</h2>
+    <a href="https://www.linkedin.com/in/andrea-palom%C3%A9-gonz%C3%A1lez-1471b21b1/" target="_blank" rel="noopener noreferrer">
+        <img src="linkedin-icon.png" alt="LinkedIn Icon" width="160" height="100">
+    </a>
+</section>
